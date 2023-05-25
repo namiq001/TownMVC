@@ -1,0 +1,20 @@
+﻿@using TownMVC.Models
+@model Dictionary<string,Setting>
+<div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+    <a href="tel:0100200340" class="tm-contact-item-link">
+        <i class="fas fa-3x fa-phone mr-4"></i>
+        <span class="mb-0">@Model["Number"].Value</span>
+    </a>
+</div>
+<div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+    <a href="mailto:info@company.co" class="tm-contact-item-link">
+        <i class="fas fa-3x fa-envelope mr-4"></i>
+        <span class="mb-0">@Model["Mail"].Value</span>
+    </a>
+</div>
+<div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+    <a href="https://www.google.com/maps" class="tm-contact-item-link">
+        <i class="fas fa-3x fa-map-marker-alt mr-4"></i>
+        <span class="mb-0">@Model["Location"].Value</span>
+    </a>
+</div>

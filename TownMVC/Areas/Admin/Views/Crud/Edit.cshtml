@@ -1,0 +1,17 @@
+﻿@model EditCrudVM
+<div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+    <form method="post">
+        <label asp-for="Title"></label>
+        <input asp-for="Title" placeholder="Title" class="tm-input">
+        <span asp-validation-for="Title"></span>
+
+        <label asp-for="Description"></label>
+        <input asp-for="Description" placeholder="Description" class="tm-input">
+        <span asp-validation-for="Description"></span>
+
+        <label asp-for="IconUrl"></label>
+        <input asp-for="IconUrl" placeholder="IconUrl" class="tm-input">
+        <span asp-validation-for="IconUrl"></span>
+        <button type="submit" class="btn tm-btn-submit">Submit</button>
+    </form>
+</div>
